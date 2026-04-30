@@ -1,1 +1,209 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Anne Schmidt - Conseillère en immobilier</title>
 
+<style>
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+}
+
+/* HEADER */
+header {
+    background: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    height: 50px;
+}
+
+nav a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+/* HERO */
+.hero {
+    height: 90vh;
+    background: url('montagne.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.button {
+    background: #ed1651;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 30px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+/* SECTIONS */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 60px 20px;
+}
+
+.section {
+    margin-bottom: 60px;
+}
+
+/* PROFIL */
+.profile {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.profile img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+/* FORM */
+form input, form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* FOOTER */
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 40px;
+    font-size: 14px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <img src="logo.png">
+    <nav>
+        <a href="#profil">Profil</a>
+        <a href="#estimation">Estimation</a>
+        <a href="#apporteur">Apporteur d'affaires</a>
+        <a href="#financement">Financement</a>
+        <a href="#actus">Actualités</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<div class="hero">
+    <div>
+        <h1>Anne Schmidt</h1>
+        <p>Conseillère en immobilier indépendante</p>
+        <a href="#estimation" class="button">Estimer mon bien</a>
+    </div>
+</div>
+
+<div class="container">
+
+    <div class="section profile" id="profil">
+        <img src="profil.jpg">
+        <div>
+            <h2>Découvrir mon profil</h2>
+            <p>
+                Je suis maman de jumeaux et installée dans la Vallée du Mont-Blanc.
+            </p>
+            <p>
+                J’aime profondément ce cadre de vie et j’ai à cœur d’accompagner mes clients
+                dans la recherche du leur, avec sérieux, écoute et engagement.
+            </p>
+        </div>
+    </div>
+
+    <div class="section" id="estimation">
+        <h2>Estimation de votre bien</h2>
+        <form>
+            <input type="text" placeholder="Nom / Prénom">
+            <input type="email" placeholder="Email">
+            <input type="tel" placeholder="Téléphone">
+            <textarea placeholder="Décrivez votre bien"></textarea>
+            <button class="button">Demander une estimation</button>
+        </form>
+    </div>
+
+    <div class="section" id="apporteur">
+        <h2>Apporteur d'affaires</h2>
+        <p>
+            Vous connaissez un vendeur ? Contactez-moi pour mettre en place un partenariat.
+        </p>
+        <form>
+            <input type="text" placeholder="Nom">
+            <input type="email" placeholder="Email">
+            <button class="button">Envoyer</button>
+        </form>
+    </div>
+
+    <div class="section" id="financement">
+        <h2>Financement</h2>
+        <p>
+            Je vous accompagne dans votre projet immobilier en vous orientant vers
+            des solutions de financement adaptées.
+        </p>
+    </div>
+
+    <div class="section" id="actus">
+        <h2>Actualités locales</h2>
+        <p>Suivez l'actualité de Saint-Gervais et de la vallée du Mont-Blanc.</p>
+
+        <ul>
+            <li><a href="https://www.saintgervais.com/" target="_blank">Saint-Gervais</a></li>
+            <li><a href="https://www.chamonix.com" target="_blank">Chamonix</a></li>
+        </ul>
+    </div>
+
+    <div class="section" id="contact">
+        <h2>Contact</h2>
+        <p><strong>Téléphone :</strong> 06 67 72 69 64</p>
+        <p><strong>Email :</strong> AN.SCHMIDT@PROPRIETES-PRIVEES.COM</p>
+
+        <a href="https://calendly.com/an-schmidt-proprietes-privees/30min" class="button">
+            Prendre rendez-vous
+        </a>
+    </div>
+
+</div>
+
+<footer>
+    <p>
+    Anne Schmidt – Conseillère en immobilier indépendant<br>
+    RSAC 945231264 ANNECY<br><br>
+
+    SAS PROPRIETES PRIVEES – 44 920€<br>
+    ZAC LE CHÊNE FERRÉ - 44120 VERTOU<br>
+    SIRET 487 624 777 00040 – RCS Nantes<br><br>
+
+    Carte professionnelle CPI 4401 2016 000 010 388<br>
+    Garantie GALIAN-SMABTP<br>
+    </p>
+</footer>
+
+</body>
+</html>
